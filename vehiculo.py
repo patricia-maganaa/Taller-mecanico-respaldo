@@ -6,7 +6,7 @@ class Vehiculo:
     _en_taller: bool
 
     # Constructor que inicializa una nueva instancia de la clase Vehiculo
-    def __init__(self, patente: str, anio: int) -> None:
+    def __init__(self, patente, anio):
         # Asigna la patente del vehículo recibida por parámetro
         self.patente = patente
         # Asigna el año de fabricación del vehículo recibido por parámetro
