@@ -22,16 +22,26 @@ class Vehiculo:
     def entregar(self):
         self.__en_taller = False
 
-    # Getter para obtener la patente
-    def obtener_patente(self):
+    @property
+    def patente(self):
         return self.__patente
 
-    # Getter para obtener el año
-    def obtener_anio(self):
+    @property
+    def anio(self):
         return self.__anio
 
-    # Consulta si el vehículo se encuentra en el taller
-    def esta_en_taller(self):
+    @property
+    def en_taller(self):
         return self.__en_taller
+
+    # Métodos alternativos por compatibilidad
+    def obtener_patente(self):
+        return self.patente
+
+    def obtener_anio(self):
+        return self.anio
+
+    def esta_en_taller(self):
+        return self.en_taller
 
 
