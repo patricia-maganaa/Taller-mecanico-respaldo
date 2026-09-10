@@ -1,7 +1,7 @@
 from vehiculo import Vehiculo
 
 v1 = Vehiculo("KXPR84", 2019)
-
-print(v1.patente)
-print(v1.anio)
-print(v1._en_taller)
+v1.ingresar()
+print(v1.obtener_patente())
+print(v1.obtener_anio())
+print(v1.esta_en_taller())
